@@ -1,0 +1,12 @@
+import pandas as pd
+data = pd.Series([10, 3, 25, 7, 18])
+print("Original Series:")
+print(data)
+sorted_data = data.sort_values()
+print("\nSorted Series (Ascending):")
+print(sorted_data)
+sorted_desc = data.sort_values(ascending=False)
+print("\nSorted Series (Descending):")
+print(sorted_desc)
+print(data.describe())
+print(sorted_data .describe())

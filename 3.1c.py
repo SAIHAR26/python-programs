@@ -1,0 +1,25 @@
+import numpy as np
+
+# Comparison operations
+a = np.array([1, 2, 3])
+b = np.array([2, 3, 4])
+
+print("Greater:", np.greater(a, b))
+print("Greater Equal:", np.greater_equal(a, b))
+print("Less:", np.less(a, b))
+print("Less Equal:", np.less_equal(a, b))
+print("Equal:", np.equal(a, b))
+
+# Checking if arrays are approximately equal
+a = np.array([1.0, 2.0, 3.0])
+b = np.array([1.0, 2.1, 3.0])
+print("Allclose:", np.allclose(a, b))
+
+a = np.array([1.000001, 2.000001])
+b = np.array([1.0, 2.0])
+print("Allclose:", np.allclose(a, b))
+
+a = np.array([1.0, 2.0, 3.0])
+b = np.array([1.1, 1.9, 2.9])
+tolerance = 0.1
+print("Allclose:", np.allclose(a, b, atol=tolerance))
